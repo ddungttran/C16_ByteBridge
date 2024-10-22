@@ -29,6 +29,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
 body{
   width: 100%;
   height: 100vh;
+	text-align: center;
   }
 
 /* Use on parent container to align child containers*/
@@ -59,6 +60,8 @@ body{
 
 .hover:hover{
 	color: var(--clr-highlight);
+	border-bottom: 2px var(--active-clr) solid;
+	transition: all 0.1s ease-in;
 }
 
 /* Logo */
@@ -78,7 +81,6 @@ nav{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 10px;
 }
 
 .navLinks{
@@ -94,6 +96,11 @@ nav{
 	padding: 10px;
 	color: var(--btn-clr);
 	margin: 10px;
+	transition: all 0.4s ease-out;
+}
+
+.donate{
+	border: none!important;
 }
 
 /* Footer */
