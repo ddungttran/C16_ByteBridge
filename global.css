@@ -2,7 +2,11 @@
 https://www.youtube.com/watch?v=5wLrz_zUwoU */
 
 :root{
-	--nav-background-color: rgb(215, 158, 158);
+	--nav-clr-background: orange;
+	--btn-clr-background: pink;
+	--btn-clr: red;
+	--active-clr: green;
+	--clr-highlight: blue;
 }
 
 /* Changed all containers. Info about border-box: 
@@ -19,6 +23,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
 * {
 	margin: 0;
 	padding: 0;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 body{
@@ -33,27 +38,51 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	height: 80vh;
 }
 
-.button{
+/* REFERNCES */
 
+.button{
+	background-color: var(--btn-clr-background);
+	border-radius: 15px;
+	padding: 10px;
 }
 
 .links{
 
 }
 
+.active{
+	color: var(--active-clr)!important;
+}
+
+.hover:hover{
+	color: var(--clr-highlight);
+}
+
+/* Logo */
+.logo{
+	height: 80%;
+	width: 10vw;
+	background-image: url(../logo/preview.png);
+	background-position: center;
+	background-size: cover;
+}
+
 /* NavBar */
 nav{
-	background-color: var(--nav-background-color);
-	height: 4vh;
+	background-color: var(--nav-clr-background);
+	height: 10vh;
 	width: 100%;
-
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
 }
 
 .navLinks{
 	display: flex;
-	justify-content: flex-end;
 }
 
 .navLinks a,li{
@@ -62,7 +91,34 @@ nav{
 }
 
 .navLink{
-	padding: 5px;
-	width: 10px;
-	height: 4vh;
+	padding: 10px;
+	color: var(--btn-clr);
+	margin: 10px;
+}
+
+/* Footer */
+footer{
+	background-color: var(--nav-clr-background);
+	height: 10vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+
+.footerIcons{
+	display: flex;
+}
+
+.footerLinks a,li{
+	text-decoration: none;
+	list-style-type: none;
+	color: var(--btn-clr);
+}
+
+.footerIcons i{
+	margin: 4px;
+	color: var(--clr-highlight);
 }
