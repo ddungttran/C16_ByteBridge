@@ -2,7 +2,7 @@
 https://www.youtube.com/watch?v=5wLrz_zUwoU */
 
 :root{
-
+	--nav-background-color: rgb(215, 158, 158);
 }
 
 /* Changed all containers. Info about border-box: 
@@ -41,4 +41,28 @@ body{
 
 .links{
 
+}
+
+/* NavBar */
+nav{
+	background-color: var(--nav-background-color);
+	height: 4vh;
+	width: 100%;
+
+}
+
+.navLinks{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.navLinks a,li{
+	text-decoration: none;
+	list-style-type: none;
+}
+
+.navLink{
+	padding: 5px;
+	width: 10px;
+	height: 4vh;
 }
