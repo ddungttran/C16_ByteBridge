@@ -56,6 +56,7 @@ body{
 
 .active{
 	color: var(--active-clr)!important;
+	border-bottom: 2px var(--active-clr) solid;
 }
 
 .hover:hover{
@@ -119,14 +120,13 @@ footer{
 	display: flex;
 }
 
-.footerLinks{
-	display: flex;
-}
-
-.footerLinks a,li,i{
+.footerLinks a,li{
 	text-decoration: none;
 	list-style-type: none;
 	color: var(--btn-clr);
-	margin: 4px;
 }
 
+.footerIcons i{
+	margin: 4px;
+	color: var(--clr-highlight);
+}
