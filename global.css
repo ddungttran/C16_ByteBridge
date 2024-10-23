@@ -119,13 +119,14 @@ footer{
 	display: flex;
 }
 
-.footerLinks a,li{
+.footerLinks{
+	display: flex;
+}
+
+.footerLinks a,li,i{
 	text-decoration: none;
 	list-style-type: none;
 	color: var(--btn-clr);
+	margin: 4px;
 }
 
-.footerIcons i{
-	margin: 4px;
-	color: var(--clr-highlight);
-}
