@@ -1,0 +1,73 @@
+
+/* PAGE STRUCTURE */
+.contact{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+height: 100%;
+background-image: url(../contactPage/contactBackgroundImage.jpg);
+background-size: cover;
+background-position: center;
+}
+
+/* CONTACT PICTURE */
+
+.contactPicture{
+  height: 90%;
+  width: 40%;
+  background-image: url(../contactPage/contactPictureEx.jpg);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+.contactFormAll h1{
+  font-size: 3rem;
+  margin: 5px;
+  letter-spacing: 3px;
+
+}
+
+.contactFormAll h3,h4{
+  font-weight: none;
+  letter-spacing: .5px;
+}
+
+/* CONTACT FORM */
+.contactFormAll{
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  width: 50%;
+  justify-content: space-around;
+  background-color: rgba(0, 255, 255, 0.812);
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: -12px -12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+.contactForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contactForm input,textarea{
+  width: 60%;
+  height: 4vh;
+  margin: 1rem 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px black solid;
+  box-shadow: -8px -8px 2px 1px rgba(0, 0, 255, .2);
+}
+
+#message{
+  height: 10vh;
+}
+
+.submitBtn{
+  box-shadow: -4px 4px 2px 1px rgba(0, 0, 255, .2);
+  border-radius: 20px;
+}
