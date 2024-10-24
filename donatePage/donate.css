@@ -1,38 +1,3 @@
-/* NAVBAR */
-nav {
-  background-color: #324534; /* Dark Green */
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navLinks {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
-}
-
-.navLink {
-  color: #F7E5B1; /* Light Beige for nav links */
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-.navLink.active, .navLink:hover {
-  color: #DAB059; /* Gold for active link or on hover */
-}
-
-.navLink.button {
-  background-color: #6FA85F; /* Green for donate button */
-  padding: 10px 20px;
-  color: white;
-  border-radius: 5px;
-}
-
-.navLink.button:hover {
-  background-color: #324534; /* Dark Green on hover */
-}
 
 /* PIC BANNER */
 .pictureBanner {
