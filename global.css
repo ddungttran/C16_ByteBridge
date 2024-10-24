@@ -2,7 +2,7 @@
 https://www.youtube.com/watch?v=5wLrz_zUwoU */
 
 :root{
-	--nav-background-color: rgb(215, 158, 158);
+	--navFooter-background-color: rgb(215, 158, 158);
 }
 
 /* Changed all containers. Info about border-box: 
@@ -53,7 +53,7 @@ p {
 /* NavBar */
 
 nav, .navLinks {
-	background-color: var(--nav-background-color);
+	background-color: var(--navFooter-background-color);
 	width: 100%;
 	display: flex;
 }
@@ -65,7 +65,7 @@ nav, .navLinks {
 nav {
 	justify-content: space-around;
 	align-items: center;
-	height: 4vh;
+	height: 10vh;
 }
 
 .navLinks {
@@ -77,13 +77,14 @@ a {
 	color: black;
 	text-decoration: none;
 	text-decoration-color:white ;
+	transition: all 1s ease-out;
 }
 a:hover {
 	color: grey;
-	text-decoration: underline;
-	text-underline-offset: 1rem;
-	text-decoration-color: rgb(181,181,181);
+	border-bottom: grey 2px solid;
+	transition: all 0.2s ease;
 }
+
 .logo {
 	font-size: 2rem;
 }
@@ -117,7 +118,7 @@ a:hover {
 	position: absolute;
 	top: 100%;
 	right: 0%;
-	background-color: rgb(215, 158, 158);
+	background-color: var(--navFooter-background-color);
 	width: fit-content;
 	max-height: 0;
 	overflow: hidden;
