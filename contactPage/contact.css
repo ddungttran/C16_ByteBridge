@@ -1,3 +1,8 @@
+:root{
+	--clr-boxshadow: #93483c90;
+
+}
+
 
 /* PAGE STRUCTURE */
 .contact{
@@ -9,6 +14,7 @@ height: 100%;
 background-image: url(../contactPage/contactBackgroundImage.jpg);
 background-size: cover;
 background-position: center;
+text-align: center;
 }
 
 /* CONTACT PICTURE */
@@ -19,7 +25,7 @@ background-position: center;
   background-image: url(../contactPage/contactPictureEx.jpg);
   background-position: center;
   background-size: cover;
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+  box-shadow: 12px 12px 2px 1px var(--clr-boxshadow);
 }
 
 .contactFormAll h1{
@@ -44,7 +50,7 @@ background-position: center;
   background-color: rgba(0, 255, 255, 0.812);
   margin: 20px;
   border-radius: 20px;
-  box-shadow: -12px -12px 2px 1px rgba(0, 0, 255, .2);
+  box-shadow: -12px -12px 2px 1px var(--clr-boxshadow);
 }
 
 .contactForm{
