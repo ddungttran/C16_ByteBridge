@@ -89,8 +89,8 @@ a {
 	transition: all 1s ease-out;
 }
 a:hover {
-	color: var(--clr-text-highlight);
-	border-bottom: var(--clr-text-highlight) 2px solid;
+	color: var(--clr-footer-background);
+	border-bottom: var(--clr-footer-background) 2px solid;
 	transition: all 0.2s ease;
 }
 
@@ -121,7 +121,7 @@ a:hover {
 .hamburger-icon span {
 	width: 100%;
 	height: 2px;
-	background-color: var(--clr-text-highlight);
+	background-color: var(--clr-footer-background);
 	transition: all 0.3 ease-in-out;
 }
 .menu-links {
@@ -140,7 +140,7 @@ a:hover {
 	text-align: center;
 	text-decoration: none;
 	font-size: 20px;
-	color: var(--clr-text-highlight);
+	color: var(--clr-footer-background);
 	transition: all 0.3 ease-in-out ;
 }
 
