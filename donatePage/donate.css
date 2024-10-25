@@ -1,65 +1,180 @@
 
 /* PIC BANNER */
-.pictureBanner{
+.pictureBanner {
   width: 100%;
   height: 20vh;
-  background-color: var(--clr-background);
+  background-color: #324534; /* Dark Green */
 }
 
-
-/* FORMATING */
-.donateAll{
+/* FORMATTING */
+.donateAll {
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  background-color: rgb(51, 49, 49)
 }
 
-.donateForm{
+.donateForm {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%; /* Adjust form width to take full space on smaller screens */
 }
 
-.donateButtons{
+.donateButtons {
   display: flex;
   margin-bottom: 1rem;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  justify-content: center;
 }
 
-
-.background{
+.background {
   display: flex;
   flex-direction: column;
-  background-color: aquamarine;
+  background-color: #F7E5B1; /* Light Beige */
   border-radius: 15px;
   width: 50%;
-  padding: 5rem 0;
+  padding: 5rem 2rem;
   margin: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .donateForm label {
   display: flex;
-  width: 50%;
+  width: 100%; /* Adjust label width for better scaling */
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-content: center;
+  margin-bottom: 1rem;
 }
 
-#donateAmt{
+#donateAmt {
   padding: 5px;
-  width: 50%;
+  width: 100%; /* Ensure the input takes full width in smaller screens */
 }
 
 /* DONATE FORM */
-.donateAll h1{
-  font-size: 4rem;
+.donateAll h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: #324534; /* Dark Green for heading */
 }
 
-.donateAll input{
+.donateAll input {
   margin: 2vh 1vh;
-  height: 3vh;
+  height: 5vh; /* Increase height for better touch targets */
   width: 100%;
-  border: 1px black solid;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* BUTTON STYLES */
+.donateButtons .button {
+  background-color: #6FA85F; /* Green */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.donateButtons .button:hover {
+  background-color: #324534; /* Dark Green on hover */
+}
+
+/* FOOTER STYLES */
+footer {
+  background-color: #93473C; /* Red for footer background */
+  padding: 20px;
+  text-align: center;
+}
+
+.footerLinks, .footerIcons {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+
+.footerLink, .footerIcon i {
+  color: #F7E5B1; /* Light Beige for footer links and icons */
+  font-size: 1.2rem;
+}
+
+.footerLink:hover, .footerIcon i:hover {
+  color: #DAB059; /* Gold on hover */
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .background {
+    width: 70%; /* Make the form container wider on smaller screens */
+  }
+
+  .donateAll h1 {
+    font-size: 2.5rem;
+  }
+
+  .donateButtons {
+    gap: 1rem; /* Add some spacing between the buttons */
+  }
+}
+
+@media (max-width: 768px) {
+  .background {
+    width: 90%; /* Adjust the width of the form on tablets */
+  }
+
+  .donateAll h1 {
+    font-size: 2rem;
+  }
+
+  .donateButtons {
+    flex-direction: column; /* Stack the buttons vertically */
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .donateForm label {
+    width: 90%; /* Adjust the label width for smaller screens */
+    flex-direction: column;
+    text-align: left;
+  }
+
+  #donateAmt {
+    width: 90%; /* Reduce input width to align with form fields */
+  }
+}
+
+@media (max-width: 480px) {
+  .background {
+    width: 100%; /* Full width on mobile screens */
+    padding: 3rem 1rem;
+  }
+
+  .donateAll h1 {
+    font-size: 1.5rem;
+  }
+
+  .donateForm label {
+    width: 100%; /* Make the form fields take full width */
+  }
+
+  .donateForm input {
+    width: 100%; /* Ensure inputs are full-width */
+  }
+
+  #donateAmt {
+    width: 100%;
+  }
+
+  .donateButtons {
+    width: 100%;
+    justify-content: space-evenly; /* Evenly space out buttons on mobile */
+  }
 }

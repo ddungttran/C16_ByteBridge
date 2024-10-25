@@ -1,68 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="global.css">
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-  <title>Nav/Footer Reference</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="global.css" />
+    <title>Nav/Footer Reference</title>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <h1>ByteBridge</h1>
+      </div>
+      <div>
+        <ul class="navLinks">
+          <li><a class="active" href="#home"> Home </a></li>
+          <li><a href="#mission"> Mission Statement </a></li>
+          <li><a href="#Gallery"> Gallery </a></li>
+          <li><a href="#donate"> Donate </a></li>
+          <li><a href="#contact"> Contact </a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <img src="../logo/exampleLogo.png" alt="Byte Bridge Logo" />
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#home" onclick="toggleMenu()"> Home </a></li>
+          <li>
+            <a href="#mission" onclick="toggleMenu()">Mission Statement</a>
+          </li>
+          <li><a href="#Gallery" onclick="toggleMenu()"> Gallery </a></li>
+          <li><a href="#donate" onclick="toggleMenu()"> Donate </a></li>
+          <li><a href="#contact" onclick="toggleMenu()"> Contact </a></li>
+        </div>
+      </div>
+    </nav>
+    <main class="container"></main>
+    <footer>
+      <div class="footerSocials">
+        <h4>Follow our socials!</h4>
+        <div class="footerSocialNBorder">
+          <ul class="socialIcons">
+            <li>
+              <i class="fa-brands fa-square-facebook"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-square-instagram"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-linkedin"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerContact">
+        <div class="footerContactForm">
+					<form class="contactForm">
+          <h4>Want to contact us?</h4>
 
-  <nav>
-    <div class="logo"></div>
-    <div>
-    <ul class="navLinks">
-      <li>
-        <a href="" class="navLink active hover">
-          Home
-        </a>
-      </li>
-      <li>
-        <a href="" class="navLink hover">
-          Mission Statement
-        </a>
-      </li>
-      <li>
-        <a href="" class="navLink hover">
-          Gallery
-        </a>
-      </li>
-      <li>
-        <a href="" class="navLink hover">
-          Contact
-        </a>
-      </li>
-      <li>
-        <a href="" class="navLink button hover donate">
-          Donate
-        </a>
-      </li>
-    </ul>
-  </div>
-  </nav>
-  <main class="container"></main>
-  <footer>
-    <ul class="footerLinks">
-      <li>
-        <a href="" class="footerLink hover">Contact</a>
-      </li>
-      <li>
-        <a href="" class="footerLink hover">Donate</a>
-      </li>
-    </ul>
-    <ul class="footerIcons">
-      <li class="footerIcon">
-        <i class="fa-brands fa-facebook hover"></i>
-      </li>
-      <li class="footerIcon">
-        <i class="fa-brands fa-instagram hover"></i>
-      </li>
-      <li class="footerIcon">
-        <i class="fa-brands fa-linkedin hover"></i>
-      </li>
-    </ul>
-  </footer>
-  <script src="https://kit.fontawesome.com/5e3005e55e.js" crossorigin="anonymous"></script>
-</body>
+						<!-- NAME -->
+            <div class="contactTypes">
+              <label for="name" class="name"></label>
+              <i class="fa-regular fa-user"></i>
+              <input class="insideInputs" type="text" name="name" id="name" placeholder="name" />
+            </div>
+						<!-- EMAIL -->
+            <div class="contactTypes">
+						<label for="email" class="email"></label>
+            <i class="fa-regular fa-envelope"></i>
+						<input class="insideInputs" type="email" name="email" id="email" placeholder="email" />
+            </div>
+            <!-- PHONE -->
+            <div class="contactTypes">
+						<label for="phone" class="phone"></label>
+            <i class="fa-solid fa-phone-volume"></i>
+						<input class="insideInputs" type="text" name="phone" id="phone" placeholder="phone" />
+            </div>
+						<!-- MESSAGE -->
+            <div class="contactTypes">
+						<label for="message" class="message"></label>
+						<textarea
+              class="insideInputs"
+							name="message"
+							id="message"
+							placeholder="message"
+						></textarea>
+          </div>
+						<!-- SUBMIT BTN -->
+						<div class="submitBtn">
+							<button class="submit button">submit</button>
+						</div>
+					</form>
+        </div>
+        <div class="contactInfo">
+          <h4>Our Information:</h4>
+          <ul>
+            <li class="contactText">
+              Address: 1654 Ashton Road, Kingston, NC, 28209
+            </li>
+            <li class="contactText">Email: hitUsUp@gmail.com</li>
+            <li class="contactText">Phone: +1(980)-667-9843</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5e3005e55e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

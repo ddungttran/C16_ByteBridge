@@ -8,28 +8,37 @@
 		<title>Donate</title>
 	</head>
 	<body>
-		<nav>
-			<div class="logo"></div>
+		<nav id="desktop-nav">
+			<div class="logo">ByteBridge</div>
 			<div>
-				<ul class="navLinks">
-					<li>
-						<a href="" class="navLink active hover"> Home </a>
-					</li>
-					<li>
-						<a href="" class="navLink hover"> Mission Statement </a>
-					</li>
-					<li>
-						<a href="" class="navLink hover"> Gallery </a>
-					</li>
-					<li>
-						<a href="" class="navLink hover"> Contact </a>
-					</li>
-					<li>
-						<a href="" class="navLink button hover donate"> Donate </a>
-					</li>
-				</ul>
+			  <ul class="navLinks">
+				<li><a class="active" href="#home"> Home </a></li>
+				<li><a href="#mission"> Mission Statement </a></li>
+				<li><a href="#Gallery"> Gallery </a></li>
+				<li><a href="#donate"> Donate </a></li>
+				<li><a href="#contact"> Contact </a></li>
+			  </ul>
 			</div>
-		</nav>
+		  </nav>
+		  <nav id="hamburger-nav">
+			<div class="logo">ByteBridge</div>
+			<div class="hamburger-menu">
+			  <div class="hamburger-icon" onclick="toggleMenu()">
+				<span></span>
+				<span></span>
+				<span></span>
+			  </div>
+			  <div class="menu-links">
+				<li><a href="#home" onclick="toggleMenu()"> Home </a></li>
+				<li>
+				  <a href="#mission" onclick="toggleMenu()">Mission Statement</a>
+				</li>
+				<li><a href="#Gallery" onclick="toggleMenu()"> Gallery </a></li>
+				<li><a href="#donate" onclick="toggleMenu()"> Donate </a></li>
+				<li><a href="#contact" onclick="toggleMenu()"> Contact </a></li>
+			  </div>
+			</div>
+		  </nav>
 		<main class="container">
 			<div class="pictureBanner"></div>
 			<div class="donateAll">
@@ -62,29 +71,43 @@
 			</div>
 		</main>
 		<footer>
-			<ul class="footerLinks">
+			<div class="footerSocials">
+			  <h4>Follow our socials!</h4>
+			  <div class="footerSocialNBorder">
+			  <ul class="socialIcons"> 
 				<li>
-					<a href="" class="footerLink hover">Contact</a>
+				  <i class="fa-brands fa-square-facebook"></i>
 				</li>
 				<li>
-					<a href="" class="footerLink hover">Donate</a>
+				  <i class="fa-brands fa-square-instagram"></i>
 				</li>
-			</ul>
-			<ul class="footerIcons">
-				<li class="footerIcon">
-					<i class="fa-brands fa-facebook hover"></i>
+				<li>
+				  <i class="fa-brands fa-linkedin"></i>
 				</li>
-				<li class="footerIcon">
-					<i class="fa-brands fa-instagram hover"></i>
+			  </ul>
+			  </div>
+			</div>
+			<div class="footerContact">
+			<div>
+			  <h4>Want to contact us?</h4>
+			  <ul>
+				<li class="contactText">
+				  Address: 1654 Ashton Road, Kingston, NC, 28209
 				</li>
-				<li class="footerIcon">
-					<i class="fa-brands fa-linkedin hover"></i>
+				<li class="contactText">
+				  Email: hitUsUp@gmail.com
 				</li>
-			</ul>
-		</footer>
-		<script
-			src="https://kit.fontawesome.com/5e3005e55e.js"
-			crossorigin="anonymous"
-		></script>
+				<li class="contactText">
+				  Phone: +1(980)-667-9843
+				</li>
+			  </ul>
+			</div>
+			<div>
+			  <img src="../logo/exampleLogo.png" alt="Byte Bridge Logo">
+			</div>
+		  </div>
+		  </footer>
+		  <script src="script.js"></script>
+		  <script src="https://kit.fontawesome.com/5e3005e55e.js" crossorigin="anonymous"></script>
 	</body>
 </html>
