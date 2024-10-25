@@ -1,4 +1,124 @@
-* {
-    padding: 0;
-    margin: 0;
+:root{--clr-boxshadow: #93483c90;}
+.banner{
+    width: 100vw;
+
+  
 }
+img{
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+    position: center;
+}
+
+
+navbar{
+    
+}
+
+navbar > ul {
+    
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+        background-color: #DAB059;
+        width: 90%;
+    
+}
+footer > ul {
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    background-color: #DAB059;
+    width: 100%;
+
+}
+
+
+h2{
+color: #93473c;
+margin-top: 10px;
+}
+
+
+p{
+  color: #93473c;
+ font-weight: bold;
+ font-size: medium;
+ font-style: times;
+ margin-top: 40px;
+ line-height: 2rem;
+}
+.missionwrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 1.5rem;
+    margin: 10rem auto;
+    width: 75%;
+    justify-content: center;
+}
+.missionwrapperlearn{
+    display: grid;
+    grid-template-rows: 1fr  ;
+    gap: 1.5rem;
+    margin: 10rem auto;
+    width: 90%;
+    position: center;
+   /* padding-left: 180px; */
+}
+.miss{
+    border:  1px solid blavk;
+    border-radius: 10px;
+    /* box-shadow: 10px 10px 10px 5px #6fa85f ; */
+    box-shadow: 12px 12px 2px 1px var(--clr-boxshadow);
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    background: #5a7a5c;
+    margin-right: 80px;
+}
+ul{
+    color:var(--clr-text);
+    line-height: 2rem;
+    list-style-type: none;
+    
+}
+li{
+    margin-top: 3px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+button{
+    background-color:  #93473c;;
+    height: 60px;
+    margin-top: 80px;
+    border-radius: 10px;
+    /* box-shadow: 10px 10px 10px 5px #FFB6C1; */
+    padding: 6px;
+    
+}
+button > a{
+    /* color:  #93473c; */
+    text-decoration: none;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+   
+  }
+  @media (max-width:796px) {
+    .missionwrapper {
+        display:flex;
+        flex-direction: column;
+    }
+}
+
