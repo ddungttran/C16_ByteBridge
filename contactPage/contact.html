@@ -18,21 +18,36 @@
 					<h1>Get in Touch</h1>
 					<h3>Have something you want to share?</h3>
 					<h3>We'd love to hear from you!</h3>
-        </div>
+          </div>
 					<form class="contactForm">
 						<!-- NAME -->
-						<label for="name" class="name"></label>
-						<input type="text" name="name" id="name" placeholder="name" />
+            <div class="contactTypes">
+              <label for="name" class="name"></label>
+              <i class="fa-regular fa-user"></i>
+              <input class="insideInputs" type="text" name="name" id="name" placeholder="name" />
+            </div>
 						<!-- EMAIL -->
+            <div class="contactTypes">
 						<label for="email" class="email"></label>
-						<input type="email" name="email" id="email" placeholder="email" />
+            <i class="fa-regular fa-envelope"></i>
+						<input class="insideInputs" type="email" name="email" id="email" placeholder="email" />
+            </div>
+            <!-- PHONE -->
+            <div class="contactTypes">
+						<label for="phone" class="phone"></label>
+            <i class="fa-solid fa-phone-volume"></i>
+						<input class="insideInputs" type="text" name="phone" id="phone" placeholder="phone" />
+            </div>
 						<!-- MESSAGE -->
+            <div class="contactTypes">
 						<label for="message" class="message"></label>
 						<textarea
+              class="insideInputs"
 							name="message"
 							id="message"
 							placeholder="message"
 						></textarea>
+          </div>
 						<!-- SUBMIT BTN -->
 						<div class="submitBtn">
 							<button class="submit button">submit</button>
