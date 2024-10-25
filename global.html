@@ -71,8 +71,41 @@
             <li class="contactText">Phone: +1(980)-667-9843</li>
           </ul>
         </div>
-        <div>
-          <img src="../logo/exampleLogo.png" alt="Byte Bridge Logo" />
+        <div class="footerContactForm">
+					<form class="contactForm">
+						<!-- NAME -->
+            <div class="contactTypes">
+              <label for="name" class="name"></label>
+              <i class="fa-regular fa-user"></i>
+              <input class="insideInputs" type="text" name="name" id="name" placeholder="name" />
+            </div>
+						<!-- EMAIL -->
+            <div class="contactTypes">
+						<label for="email" class="email"></label>
+            <i class="fa-regular fa-envelope"></i>
+						<input class="insideInputs" type="email" name="email" id="email" placeholder="email" />
+            </div>
+            <!-- PHONE -->
+            <div class="contactTypes">
+						<label for="phone" class="phone"></label>
+            <i class="fa-solid fa-phone-volume"></i>
+						<input class="insideInputs" type="text" name="phone" id="phone" placeholder="phone" />
+            </div>
+						<!-- MESSAGE -->
+            <div class="contactTypes">
+						<label for="message" class="message"></label>
+						<textarea
+              class="insideInputs"
+							name="message"
+							id="message"
+							placeholder="message"
+						></textarea>
+          </div>
+						<!-- SUBMIT BTN -->
+						<div class="submitBtn">
+							<button class="submit button">submit</button>
+						</div>
+					</form>
         </div>
       </div>
     </footer>
