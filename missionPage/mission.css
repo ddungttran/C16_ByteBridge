@@ -59,20 +59,28 @@ p{
 .missionwrapper{
     display: grid;
     grid-template-columns: 1fr 1fr ;
-    gap: 1.5rem;
+    gap: 3.5rem;
     margin: 10rem auto;
-    width: 75%;
+    width: 85%;
     justify-content: center;
+    margin-top: 80px;
 }
 .missionwrapperlearn{
     display: grid;
-    grid-template-rows: 1fr  ;
+    grid-template-columns:   1fr 1fr 1fr ;
     gap: 1.5rem;
-    margin: 10rem auto;
-    width: 90%;
+    margin: 1rem auto;
+    width: 80%;
     position: center;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    margin-top: ;
+    
+    
    /* padding-left: 180px; */
 }
+
 .miss{
     border:  1px solid blavk;
     border-radius: 10px;
@@ -109,7 +117,13 @@ button > a{
     text-decoration: none;
 }
 
-
+footer{
+    position: bottom;
+}
+.mlfooter{
+    position: bottom;
+    float: bottom;
+}
 
 
 @media only screen and (max-width: 600px) {

@@ -9,14 +9,45 @@
     <title>aboutus</title>
 </head>
 <body>
-    <div class="banner"><img src="about-banner.jpg"></div>
+    <nav id="desktop-nav">
+        <div class="logo">ByteBridge</div>
+        <div>
+          <ul class="navLinks">
+            <li><a class="active" href="#home"> Home </a></li>
+            <li><a href="#mission"> Mission Statement </a></li>
+            <li><a href="#Gallery"> Gallery </a></li>
+            <li><a href="#donate"> Donate </a></li>
+            <li><a href="#contact"> Contact </a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">ByteBridge</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="home.html" onclick="toggleMenu()"> Home </a></li>
+            <li>
+              <a href="mission.html" onclick="toggleMenu()">Mission Statement</a>
+            </li>
+            <li><a href="gallery.html" onclick="toggleMenu()"> Gallery </a></li>
+            <li><a href="donate.html" onclick="toggleMenu()"> Donate </a></li>
+            <li><a href="contact.html" onclick="toggleMenu()"> Contact </a></li>
+          </div>
+        </div>
+      </nav>
+      <div class="banner"><img src="about-banner.jpg"></div>
+      
+      <main>
     <section class="missionwrapper">
+
     <section class="miss">
     <h2>Who are we?</h2>
-    <p> ByteBridge is an organization curated to close the digital divide for minority youth, grades 8-12. We as an organization strive to provide resources and technology necessary for students who are interested in completing our free coding and computer science bootcamps. We strive to inform students of the technical careers available to them, and the journeys they can take to obtain those careers.
-        
-            
-        
+    <p> ByteBridge is an organization curated to close the digital divide for minority youth, grades 8-12. We as an organization strive to provide resources and technology necessary for students who are interested in completing our free coding and computer science bootcamps. We strive to inform students of the technical careers available to them, and the journeys they can take to obtain those careers. </p>   
 </section>
    
     
@@ -25,8 +56,7 @@
     
     <section class="miss">
     <h2>What is the digital divide?</h2>
-    <p>According to the North Carolina Department Of Information Technology, The digital divide is the gap between those who have access to technology, the internet, and digital literacy training and those who do not. It affects all generations, communities,  and a wide variety of industries and sectors.
-</p></section>
+    <p>According to the North Carolina Department Of Information Technology, The digital divide is the gap between those who have access to technology, the internet, and digital literacy training and those who do not. It affects all generations, communities,  and a wide variety of industries and sectors.</p></section>
 
 
 
@@ -40,26 +70,20 @@
 </p></section>
 
 
-
-
-
 <section class="miss">
     <h2>Why is access to technology important?</h2>
     <ul>
         <li>All Americans, regardless of their region, should have the opportunity to participate in the digital economy. It's a matter of equity.</li>
         <li>63% of students in the US engage in online learning activities daily.</li>
         <li>We rely on the Internet for the majority of our day-to-day processes. Without access to the internet. How would you get online work done? Talk to friends or family? Schedule appointments? Learn? Pay bills? The answer’s pretty simple: You wouldn’t. Because we live in a technology-driven society, many aspects of our lives require digital interactions.</li>
-       </ul>
-
-    </section>
+       </ul> </section>
 
     <section class="miss">
         <h2>How does our organization close the digital divide and provide resources for minority youth interested in a technical career?
         </h2>
         <ul>
             <li>
-                According to  The Forbes advisor webpage, A coding bootcamp can prepare you to succeed in tech by teaching you the skills required to be a web developer or computer programmer. Bootcamp students learn to code in a fast-paced, rigorous format—without having to earn a four-year degree. Our organization not only provides the technology necessary to complete these bootcamps, but we provide the bootcamp as well!
-            </li>
+                According to  The Forbes advisor webpage, A coding bootcamp can prepare you to succeed in tech by teaching you the skills required to be a web developer or computer programmer. Bootcamp students learn to code in a fast-paced, rigorous format—without having to earn a four-year degree. Our organization not only provides the technology necessary to complete these bootcamps, but we provide the bootcamp as well! </li>
             <li>We know the prices of some of these online materials can be quite steep, and because we are catered to underfunded school districts, we set out to provide free, in-depth material for students who are interested in coding, and information technology.</li>
             <li>College can be expensive, and gaining these technical skills, while developing a portfolio early on allows participants to break into tech spaces without breaking the bank. </li>
             </ul></section>
@@ -70,16 +94,55 @@
 <h2>More facts about the digital divide:</h2>
 <ul>
     <li>1.1 million North Carolina households lack access to high-speed internet, cannot afford it, or do not have the skills needed to take advantage of the digital economy (Source: NC Broadband Office)</li>
-    <li> 35 % of households in the U.S. with school-age children and an annual income below $30,000 do not have access to high-speed internet (Source: Pew Research Center) </li>
+    <li> 35 % of households in the U.S. with school-age children and an annual income below $30,000 do not have access to high-speed internet (Source: Pew Research Center).</li>
     <li>89 out of 115  NC school districts lack sufficient resources to sustain their technology for student devices beyond the initial federal pandemic relief funding.</li>
     <li></li>
-    <button><a href="missionlearn.html">click here to learn more! </a></button>
-</ul>
-</section>
+    <button><a href="missionlearn.html">Click here to learn more! </a></button>
+</ul></section>
 
+</main>
+<footer>
+  <div class="footerSocials">
+    <h4>Follow our socials!</h4>
+    <div class="footerSocialNBorder">
+    <ul class="socialIcons"> 
+      <li>
+        <i class="fa-brands fa-square-facebook"></i>
+      </li>
+      <li>
+        <i class="fa-brands fa-square-instagram"></i>
+      </li>
+      <li>
+        <i class="fa-brands fa-linkedin"></i>
+      </li>
+    </ul>
+    </div>
+  </div>
+  <div class="footerContact">
+  <div>
+    <h4>Want to contact us?</h4>
+    <ul>
+      <li class="contactText">
+        Address: 1654 Ashton Road, Kingston, NC, 28209
+      </li>
+      <li class="contactText">
+        Email: hitUsUp@gmail.com
+      </li>
+      <li class="contactText">
+        Phone: +1(980)-667-9843
+      </li>
+    </ul>
+  </div>
+  <div>
+    <img src="../logo/exampleLogo.png" alt="Byte Bridge Logo">
+  </div>
+</div>
+</footer>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/5e3005e55e.js" crossorigin="anonymous"></script>
 
    
-</ul>
+
 </section>
 </section>
 </body>
