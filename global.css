@@ -185,6 +185,7 @@ a:hover {
 
 footer{
 	display: flex;
+	flex-grow: inherit;
 	flex-direction: column;
 	justify-content: space-evenly;
 	width: 100%;
@@ -314,9 +315,15 @@ textarea {
 }
 
 /* Footer Media Queries */
-
-@media screen and (max-width: 1200px) {
-	.footerContact img{
-		display: none;
+@media screen and (max-width: 320px){
+	footer{
+		height: 60vh;
 	}
-} 
+	.footerContactForm{
+		margin: 30px 0;
+	}
+	.contactInfo{
+		display: flex;
+		text-align: center;
+	}
+}
