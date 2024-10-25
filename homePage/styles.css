@@ -4,94 +4,66 @@ html{
 
 
 h1{
-color: brown;
-margin-left: 40%;
-margin-top: 50px;
+color: green;
+margin-left: 600px;
+margin-top: 30%;
+
 }
 
 P{
-    color: purple;
+    color: #93473c;
    font-weight: bold;
-   font-size: medium;
-   font-style: italic;
-   margin-top: 40px;
-   line-height: 2rem
+   font-size: larger;
+   font-style: arial;
+   margin-top: 30px;
+   line-height: 2rem;
+   text-align: center;
+   
+   
 }
 
-.itemimage {
+.paragraph{
+    width: 80%;
+   margin: 0 auto;
+}
 
-    margin: 10rem auto;
+.imageitem{
     width: 100%;
-    height: 700px;
+    height: 650px;
+}
+
+img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.bannerpic{
+    position: absolute;
+    top: 5px;
+    left: 10px; 
+    font-size: 80px ;
+    color: white;
+}
+
+.sectionwrapper{
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3.5rem;
+    width: 80%;
     
 }
 
-/* CSS Variables. More info: 
-https://www.youtube.com/watch?v=5wLrz_zUwoU */
-
-:root{
-	--nav-background-color: rgb(215, 158, 158);
+.homeitem{
+    text-align: center;
+    /* width: 0%;  */
+    border: 1px #93473c;
+    border-radius: 2.5rem;
+    box-shadow: 10px 10px 10px 5px #93473c;
+  
 }
 
-/* Changed all containers. Info about border-box: 
-https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
 
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
+h2{
+    text-align: center;
 }
-
-/* Body takes up full page*/
-
-* {
-	margin: 0;
-	padding: 0;
-}
-
-body{
-  width: 100%;
-  height: 100vh;
-  }
-
-/* Use on parent container to align child containers*/
-
-.container {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.button{
-
-}
-
-.links{
-
-}
-
-/* NavBar */
-nav{
-	background-color: var(--nav-background-color);
-	height: 4vh;
-	width: 100%;
-
-}
-
-.navLinks{
-	display: flex;
-	justify-content: flex-end;
-}
-
-.navLinks a,li{
-	text-decoration: none;
-	list-style-type: none;
-}
-
-.navLink{
-	padding: 5px;
-	width: 10px;
-	height: 4vh;
-}
-
