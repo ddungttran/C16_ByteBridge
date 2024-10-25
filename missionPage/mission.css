@@ -67,15 +67,16 @@ p{
 }
 .missionwrapperlearn{
     display: grid;
-    grid-template-columns:   1fr 1fr 1fr ;
-    gap: 1.5rem;
-    margin: 1rem auto;
-    width: 80%;
-    position: center;
+    grid-template-rows: 1fr 1 fr ;
+    gap: 30px;
+    margin: 5rem auto;
+    width: 80vw;
+    /* position: center; */
     justify-content: center;
     align-items: center;
-    height: 80%;
-    margin-top: ;
+    height: 100vh;
+    /* margin-top:5px ; */
+    overflow: scroll;
     
     
    /* padding-left: 180px; */
@@ -119,6 +120,8 @@ button > a{
 
 footer{
     position: bottom;
+    position: absolute;
+   
 }
 .mlfooter{
     position: bottom;
