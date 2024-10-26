@@ -58,7 +58,23 @@ p {
 /* NavBar */
 
 .active{
-	color: var(--clr-footer-background)!important;
+	color: var(--active-clr)!important;
+	border-bottom: 2px var(--active-clr) solid;
+}
+
+.hover:hover{
+	color: var(--clr-highlight);
+	border-bottom: 2px var(--active-clr) solid;
+	transition: all 0.1s ease-in;
+}
+
+/* Logo */
+.logo{
+	height: 80%;
+	width: 10vw;
+	background-image: url(../logo/preview.png);
+	background-position: center;
+	background-size: cover;
 }
 
 nav, .navLinks {
@@ -292,6 +308,11 @@ textarea {
 	border-radius: 20px;
 }
 
+.footerLinks a,li{
+	text-decoration: none;
+	list-style-type: none;
+	color: var(--btn-clr);
+
 .button {
 	font-size: 10px;
 	border-radius: 10px;
@@ -312,9 +333,11 @@ textarea {
 	align-content: center;
 }
 
-.contactInfo li{
-	padding: 10px;
+.footerIcons i{
+	margin: 4px;
+	color: var(--clr-highlight);
 }
+
 
 /* Footer Media Queries */
 @media screen and (max-width: 320px){
@@ -333,3 +356,4 @@ textarea {
 		text-align: center;
 	}
 }
+
