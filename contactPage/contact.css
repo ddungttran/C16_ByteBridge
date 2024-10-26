@@ -26,21 +26,21 @@
 	box-shadow: 12px 12px 2px 1px var(--clr-boxshadow);
 }
 
-.contactFormAll h1{
+.contactPageFormAll h1{
 	font-size: 4rem;
 	margin: 5px;
 	letter-spacing: 3px;
   color: var(--clr-text);
 }
 
-.contactFormAll h3 {
+.contactPageFormAll h3 {
 	font-size: 1.5rem;
 	letter-spacing: 0.5px;
   color: var(--clr-text);
 }
 
 /* CONTACT FORM */
-.contactFormAll {
+.contactPageFormAll {
 	display: flex;
 	flex-direction: column;
 	height: 60%;
@@ -52,19 +52,19 @@
 	box-shadow: -12px -12px 2px 1px var(--clr-boxshadow);
 }
 
-.contactForm {
+.contactPageForm {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-.contactTypes{
+.contactPageTypes{
   width: 100%;
 }
-.contactTypes i{
+.contactPageTypes i{
   padding: 10px;
 }
-.contactForm input,
+.contactPageForm input,
 textarea {
 	width: 60%;
 	height: 4vh;
@@ -76,12 +76,16 @@ textarea {
   outline: none;
 }
 
-#message {
+#contactMessage {
 	height: 10vh;
   width: 65%;
 }
 
-.submitBtn {
+#message{
+	box-shadow: none;
+}
+
+.contactSubmitBtn {
 	box-shadow: -4px 4px 2px 1px var(--clr-boxshadow-highlight);
 	border-radius: 20px;
 }
