@@ -1,11 +1,4 @@
 
-/* PIC BANNER */
-.pictureBanner {
-  width: 100%;
-  height: 20vh;
-  background-color: #324534; /* Dark Green */
-}
-
 /* FORMATTING */
 .donateAll {
   height: 100%;
@@ -147,9 +140,10 @@ footer {
   }
 
   #donateAmt {
-    width: 90%; /* Reduce input width to align with form fields */
+    padding: 5px;
+    width: 66%; /* Reduce input width to align with form fields */
+    margin-left: 10px;
   }
-}
 
 @media (max-width: 480px) {
   .background {
@@ -167,10 +161,6 @@ footer {
 
   .donateForm input {
     width: 100%; /* Ensure inputs are full-width */
-  }
-
-  #donateAmt {
-    width: 100%;
   }
 
   .donateButtons {
