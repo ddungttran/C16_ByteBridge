@@ -97,3 +97,19 @@ textarea {
   color: black;
   font-size: 10px;
 }
+
+/* media query */
+
+@media screen and (max-width: 768px){
+  .contact{
+    display: flex;
+    justify-content: center;
+  }
+  .contactFormAll{
+    height: 80vh;
+    width: 60vw;
+  }
+  .contactPicture{
+    display: none;
+  }
+}
