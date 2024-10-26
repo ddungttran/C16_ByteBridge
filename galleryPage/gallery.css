@@ -1,0 +1,21 @@
+body {
+  background-color: white;
+}
+.grid-container {
+  display: inline-grid;
+  column-gap: 15vw;
+  row-gap: 15vh;
+  margin-top: 8vh;
+  grid-template-columns: 10vw 10vw 10vw 10vw;
+  font-family: Quicksand;
+  font-weight: 800;
+  text-align: center;
+  margin-left: 5vw;
+}
+.grid-item {
+  margin: 5vw;
+}
+
+.grid-item:hover {
+  background-color: rgba(140, 140, 140, 0.462);
+}

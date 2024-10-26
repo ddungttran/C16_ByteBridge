@@ -289,8 +289,12 @@ textarea {
 }
 
 .submitBtn {
+	height: 3vh;
+  width: 100%;
+  box-shadow: -4px 4px 2px 1px var(--clr-boxshadow-highlight);
 	border-radius: 20px;
 }
+
 
 .button {
 	font-size: 10px;
