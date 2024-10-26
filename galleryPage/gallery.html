@@ -3,73 +3,218 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
-    <link rel="stylesheet" href="styles.css" />
-
-  <body>
-    <nav>
-      <div class="logo"></div>
-      <div class="navLinks">
-      <ul>
-        <li class="navLink">Home</li>
-        <li class="navLink">Mission Statement</li>
-        <li class="navLink">Gallery</li>
-        <li class="navLink">Donate</li>
-        <li class="navLink">Contact</li>
-      </ul>
-    </div>
-    
+    <link rel="stylesheet" href="gallery.css" />
+    <title>Gallery</title>
+  </head>
+  <div>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <h1>ByteBridge</h1>
+      </div>
+      <div>
+        <ul class="navLinks">
+          <li><a  href="#home"> Home </a></li>
+          <li><a href="#mission"> Mission Statement </a></li>
+          <li><a class="active" href="#Gallery"> Gallery </a></li>
+          <li><a href="#donate"> Donate </a></li>
+          <li><a href="#contact"> Contact </a></li>
+        </ul>
+      </div>
     </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <h1>ByteBridge</h1>
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#home" onclick="toggleMenu()"> Home </a></li>
+          <li>
+            <a href="#mission" onclick="toggleMenu()">Mission Statement</a>
+          </li>
+          <li><a href="#Gallery" onclick="toggleMenu()"> Gallery </a></li>
+          <li><a href="#donate" onclick="toggleMenu()"> Donate </a></li>
+          <li><a href="#contact" onclick="toggleMenu()"> Contact </a></li>
+        </div>
+      </div>
+    </nav>
+    <main class="container"></main>
+
+<div class="grid-box">
     <div class="grid-container">
       <div class="grid-item">
-       <div >
-         <img id="img-1" src="/galleryPage/Images/TechImg1.jpeg"
-        /><h3>Emerging Leaders</h3>
+       
+         <img src="/galleryPage/Images/TechImg1.jpeg"/>
+
+        <div class="description">
+        <h2>Emerging Leaders </h2> 
+        <figcaption> ByteBridge focuses on developing leadership skills in our students by focusing on personal growth and development. </figcaption>
       </div>
       </div>
 
       <div class="grid-item">
-      <div>
-          <img  id="img-2" src="/galleryPage/Images/TechImg2.jpeg" /><h3>Active Lessons</h3>
+        
+          <img src="/galleryPage/Images/TechImg2.jpeg" />
+          <div class="description">
+          <h2>Active Lessons</h2>
+          <figcaption> Active lessons are provided to our students that focus on hands on and interactive learning. </figcaption>
+          </div>
+      </div>
+
+      <div class="grid-item">
+
+          <img src="/galleryPage/Images/TechImg3.jpeg" />
+          <div class="description">
+          <h2>Technical Guidance</h2>
+          <figcaption> Providing clarifying technical guidance that ensures navigation through learning challenges and road blocks is a priority at ByteBridge.</figcaption>
+</div>
+      </div>
+
+      <div class="grid-item">
+        
+          <img src="/galleryPage/Images/TechImg4.jpeg" />
+          <div class="description">
+          <h2>Mentorship</h2>
+          <figcaption> Mentorship is a given to every student to ensure their direct needs in the learning environment is being met. </figcaption>
+</div>
+      </div>
+
+      <div class="grid-item">
+       
+          <img src="/galleryPage/Images/TechImg5.jpeg" />
+          <div class="description">
+
+          <h2>Innovation</h2>
+          <figcaption> Creating environments and encouraging mindsets of innovation is a key objective in the ByteBridge learning environment.</figcaption>
+</div>
+
+      </div>
+
+      <div class="grid-item">
+        
+          <img src="/galleryPage/Images/TechImg6.jpeg" />
+          <div class="description">
+
+          <h2>Technical Development</h2>
+          <figcaption> Developing technical skills from any level to workplace proficiency is our commitment to every complying learner.  </figcaption>
+</div>
+      </div>
+
+      <div class="grid-item">
+        
+          <img src="/galleryPage/Images/TechImg7.jpeg" />
+          <div class="description">
+
+          <h2>Team Collaboration</h2>
+          <figcaption> Environments of work collaboration will be created for students to ensure smooth transitions to long term roles with efficent team ettiqute. </figcaption>
+</div>
+      </div>
+
+      <div class="grid-item">
+          <img src="/galleryPage/Images/TechImg8.jpeg" />
+          <div class="description">
+
+          <h2>Developing a Generation</h2>
+          <figcaption>Through many technical and professional efforts, ByteBridge seeks to ultimatly contribute in bridging the gap to developing the next generation of underprivlaged technical professionals.</figcaption>
+</div>
       </div>
     </div>
-
-      <div class="grid-item">
-      <div>
-          <img id="img-3" src="/galleryPage/Images/TechImg3.jpeg" /><h3>Technical Guidance</h3>
+  </div>
+</div>
+    <footer>
+      <div class="footerSocials">
+        <h4>Follow our socials!</h4>
+        <div class="footerSocialNBorder">
+          <ul class="socialIcons">
+            <li>
+              <i class="fa-brands fa-square-facebook"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-square-instagram"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-linkedin"></i>
+            </li>
+          </ul>
         </div>
       </div>
+      <div class="footerContact">
+        <div class="footerContactForm">
+          <form class="contactForm">
+            <h4>Want to contact us?</h4>
 
-
-      <div class="grid-item">
-      <div>
-          <img id="img-4" src="/galleryPage/Images/TechImg4.jpeg" /><h3>Mentorship</h3>
-      </div>
-    </div>
-
-      <div class="grid-item">
-      <div>
-          <img id="img-5" src="/galleryPage/Images/TechImg5.jpeg" /><h3>Innovation</h3>
+            <!-- NAME -->
+            <div class="contactTypes">
+              <label for="name" class="name"></label>
+              <i class="fa-regular fa-user"></i>
+              <input
+                class="insideInputs"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="name"
+              />
+            </div>
+            <!-- EMAIL -->
+            <div class="contactTypes">
+              <label for="email" class="email"></label>
+              <i class="fa-regular fa-envelope"></i>
+              <input
+                class="insideInputs"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="email"
+              />
+            </div>
+            <!-- PHONE -->
+            <div class="contactTypes">
+              <label for="phone" class="phone"></label>
+              <i class="fa-solid fa-phone-volume"></i>
+              <input
+                class="insideInputs"
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="phone"
+              />
+            </div>
+            <!-- MESSAGE -->
+            <div class="contactTypes">
+              <label for="message" class="message"></label>
+              <textarea
+                class="insideInputs"
+                name="message"
+                id="message"
+                placeholder="message"
+              ></textarea>
+            </div>
+            <!-- SUBMIT BTN -->
+            <div class="submitBtn">
+              <button class="submit button">submit</button>
+            </div>
+          </form>
+        </div>
+        <div class="contactInfo">
+          <h4>Our Information:</h4>
+          <ul>
+            <li class="contactText">
+              Address: 1654 Ashton Road, Kingston, NC, 28209
+            </li>
+            <li class="contactText">Email: hitUsUp@gmail.com</li>
+            <li class="contactText">Phone: +1(980)-667-9843</li>
+          </ul>
         </div>
       </div>
-
-      <div class="grid-item">
-      <div>
-          <img id="img-6" src="/galleryPage/Images/TechImg6.jpeg" /><h3>Technical Development</h3>
-      </div>
-    </div>
-
-      <div class="grid-item">
-      <div>
-          <img id="img-7" src="/galleryPage/Images/TechImg7.jpeg" /><h3>Team Collaboration</h3>
-      </div>
-    </div>
-
-      <div class="grid-item">
-      <div>
-          <img id="img-8" src="/galleryPage/Images/TechImg8.jpeg" /><h3>Developing a Generation</h3>
-        </div>
-      </div>
-    </div>
+    </footer>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5e3005e55e.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
