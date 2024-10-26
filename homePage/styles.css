@@ -1,0 +1,69 @@
+html{
+    background-color: #f7e5b1;
+}
+
+
+h1{
+color: green;
+margin-left: 600px;
+margin-top: 30%;
+
+}
+
+P{
+    color: #93473c;
+   font-weight: bold;
+   font-size: larger;
+   font-style: arial;
+   margin-top: 30px;
+   line-height: 2rem;
+   text-align: center;
+   
+   
+}
+
+.paragraph{
+    width: 80%;
+   margin: 0 auto;
+}
+
+.imageitem{
+    width: 100%;
+    height: 650px;
+}
+
+img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.bannerpic{
+    position: absolute;
+    top: 5px;
+    left: 10px; 
+    font-size: 80px ;
+    color: white;
+}
+
+.sectionwrapper{
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3.5rem;
+    width: 80%;
+    
+}
+
+.homeitem{
+    text-align: center;
+    /* width: 0%;  */
+    border: 1px #93473c;
+    border-radius: 2.5rem;
+    box-shadow: 10px 10px 10px 5px #93473c;
+  
+}
+
+
+h2{
+    text-align: center;
+}
