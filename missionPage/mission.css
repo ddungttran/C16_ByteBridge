@@ -127,6 +127,11 @@ footer{
     position: bottom;
     float: bottom;
 }
+.logoimg{
+    height: 200px;
+    width:100%;
+    object-fit: cover;
+}
 
 
 @media only screen and (max-width: 600px) {
