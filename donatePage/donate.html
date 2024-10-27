@@ -10,19 +10,25 @@
   <body>
     <!-- Desktop Navigation -->
     <nav id="desktop-nav">
-      <div class="logo">ByteBridge</div>
-      <ul class="navLinks">
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#mission">Mission Statement</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#donate">Donate</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <div class="logo">
+        <h1>ByteBridge</h1>
+      </div>
+      <div>
+        <ul class="navLinks">
+          <li><a class="active" href="#home"> Home </a></li>
+          <li><a href="#mission"> Mission Statement </a></li>
+          <li><a href="#Gallery"> Gallery </a></li>
+          <li><a href="#donate"> Donate </a></li>
+          <li><a href="#contact"> Contact </a></li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Mobile Navigation (Hamburger) -->
     <nav id="hamburger-nav">
-      <div class="logo">ByteBridge</div>
+      <div class="logo">
+        <h1>ByteBridge</h1>
+      </div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -30,13 +36,13 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#home" onclick="toggleMenu()"> Home </a></li>
           <li>
             <a href="#mission" onclick="toggleMenu()">Mission Statement</a>
           </li>
-          <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
-          <li><a href="#donate" onclick="toggleMenu()">Donate</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#Gallery" onclick="toggleMenu()"> Gallery </a></li>
+          <li><a href="#donate" onclick="toggleMenu()"> Donate </a></li>
+          <li><a href="#contact" onclick="toggleMenu()"> Contact </a></li>
         </div>
       </div>
     </nav>
@@ -58,7 +64,6 @@
                 placeholder="Please enter your name"
               />
               <span class="form-message"></span>
-              <!-- Span for error message -->
             </div>
 
             <div class="form-group">
@@ -70,7 +75,6 @@
                 placeholder="Please enter your email"
               />
               <span class="form-message"></span>
-              <!-- Span for error message -->
             </div>
 
             <div class="form-group">
@@ -82,7 +86,6 @@
                 placeholder="Please enter your phone"
               />
               <span class="form-message"></span>
-              <!-- Span for error message -->
             </div>
 
             <div class="donateButtons">
@@ -101,7 +104,6 @@
                 placeholder="Custom Amount"
               />
               <span class="form-message"></span>
-              <!-- Span for error message -->
             </div>
 
             <button class="button" type="submit">Submit</button>
@@ -114,24 +116,74 @@
     <footer>
       <div class="footerSocials">
         <h4>Follow our socials!</h4>
-        <ul class="socialIcons">
-          <li><i class="fa-brands fa-square-facebook"></i></li>
-          <li><i class="fa-brands fa-square-instagram"></i></li>
-          <li><i class="fa-brands fa-linkedin"></i></li>
-        </ul>
+        <div class="footerSocialNBorder">
+          <ul class="socialIcons">
+            <li><i class="fa-brands fa-square-facebook"></i></li>
+            <li><i class="fa-brands fa-square-instagram"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+          </ul>
+        </div>
       </div>
-
       <div class="footerContact">
-        <h4>Want to contact us?</h4>
-        <ul>
-          <li class="contactText">
-            Address: 1654 Ashton Road, Kingston, NC, 28209
-          </li>
-          <li class="contactText">Email: hitUsUp@gmail.com</li>
-          <li class="contactText">Phone: +1(980)-667-9843</li>
-        </ul>
-        <div>
-          <img src="../logo/exampleLogo.png" alt="Byte Bridge Logo" />
+        <div class="footerContactForm">
+          <form class="contactForm">
+            <h4>Want to contact us?</h4>
+            <div class="contactTypes">
+              <label for="name" class="name"></label>
+              <i class="fa-regular fa-user"></i>
+              <input
+                class="insideInputs"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="name"
+              />
+            </div>
+            <div class="contactTypes">
+              <label for="email" class="email"></label>
+              <i class="fa-regular fa-envelope"></i>
+              <input
+                class="insideInputs"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="email"
+              />
+            </div>
+            <div class="contactTypes">
+              <label for="phone" class="phone"></label>
+              <i class="fa-solid fa-phone-volume"></i>
+              <input
+                class="insideInputs"
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="phone"
+              />
+            </div>
+            <div class="contactTypes">
+              <label for="message" class="message"></label>
+              <textarea
+                class="insideInputs"
+                name="message"
+                id="message"
+                placeholder="message"
+              ></textarea>
+            </div>
+            <div class="submitBtn">
+              <button class="submit button">submit</button>
+            </div>
+          </form>
+        </div>
+        <div class="contactInfo">
+          <h4>Our Information:</h4>
+          <ul>
+            <li class="contactText">
+              Address: 1654 Ashton Road, Kingston, NC, 28209
+            </li>
+            <li class="contactText">Email: hitUsUp@gmail.com</li>
+            <li class="contactText">Phone: +1(980)-667-9843</li>
+          </ul>
         </div>
       </div>
     </footer>
