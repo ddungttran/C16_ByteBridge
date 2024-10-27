@@ -1,113 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="../global.css" />
-		<link rel="stylesheet" href="donate.css" />
-		<title>Donate</title>
-	</head>
-	<body>
-		<nav id="desktop-nav">
-			<div class="logo">ByteBridge</div>
-			<div>
-			  <ul class="navLinks">
-				<li><a class="active" href="#home"> Home </a></li>
-				<li><a href="#mission"> Mission Statement </a></li>
-				<li><a href="#Gallery"> Gallery </a></li>
-				<li><a href="#donate"> Donate </a></li>
-				<li><a href="#contact"> Contact </a></li>
-			  </ul>
-			</div>
-		  </nav>
-		  <nav id="hamburger-nav">
-			<div class="logo">ByteBridge</div>
-			<div class="hamburger-menu">
-			  <div class="hamburger-icon" onclick="toggleMenu()">
-				<span></span>
-				<span></span>
-				<span></span>
-			  </div>
-			  <div class="menu-links">
-				<li><a href="#home" onclick="toggleMenu()"> Home </a></li>
-				<li>
-				  <a href="#mission" onclick="toggleMenu()">Mission Statement</a>
-				</li>
-				<li><a href="#Gallery" onclick="toggleMenu()"> Gallery </a></li>
-				<li><a href="#donate" onclick="toggleMenu()"> Donate </a></li>
-				<li><a href="#contact" onclick="toggleMenu()"> Contact </a></li>
-			  </div>
-			</div>
-		  </nav>
-		<main class="container">
-			<div class="pictureBanner"></div>
-			<div class="donateAll">
-				<div class="background">
-					<h1>Want to donate?</h1>
-					<form class="donateForm">
-						<label for="name"
-							>Name:
-							<input type="text" name="name" id="name" />
-						</label>
-						<label for="email"
-							>Email:
-							<input type="email" name="email" id="email" />
-						</label>
-						<label for="phoneNum">Phone:
-							<input type="tel" name="phoneNum" id="phoneNum" />
-						</label>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="donate.css" />
+    <title>Donate</title>
+  </head>
+  <body>
+    <!-- Desktop Navigation -->
+    <nav id="desktop-nav">
+      <div class="logo">ByteBridge</div>
+      <ul class="navLinks">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#mission">Mission Statement</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#donate">Donate</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Mobile Navigation (Hamburger) -->
+    <nav id="hamburger-nav">
+      <div class="logo">ByteBridge</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+          <li>
+            <a href="#mission" onclick="toggleMenu()">Mission Statement</a>
+          </li>
+          <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
+          <li><a href="#donate" onclick="toggleMenu()">Donate</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+      <div class="pictureBanner"></div>
+
+      <div class="donateAll">
+        <div class="background">
+          <h1>Want to donate?</h1>
+          <form class="donateForm" id="form-1">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Please enter your name"
+              />
+              <span class="form-message"></span>
+              <!-- Span for error message -->
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Please enter your email"
+              />
+              <span class="form-message"></span>
+              <!-- Span for error message -->
+            </div>
+
+            <div class="form-group">
+              <label for="phoneNum">Phone:</label>
+              <input
+                type="tel"
+                name="phoneNum"
+                id="phoneNum"
+                placeholder="Please enter your phone"
+              />
+              <span class="form-message"></span>
+              <!-- Span for error message -->
+            </div>
+
             <div class="donateButtons">
               <button class="button">$50</button>
               <button class="button">$100</button>
               <button class="button">$500</button>
               <button class="button">$1000</button>
             </div>
-            <label for="donateAmt">
-							<input type="number" name="donateAmt" id="donateAmt" placeholder="Custom Amount"/>
-						</label>
-						<button class="button" type="submit">Submit</button>
-					</form>
-				</div>
-			</div>
-		</main>
-		<footer>
-			<div class="footerSocials">
-			  <h4>Follow our socials!</h4>
-			  <div class="footerSocialNBorder">
-			  <ul class="socialIcons"> 
-				<li>
-				  <i class="fa-brands fa-square-facebook"></i>
-				</li>
-				<li>
-				  <i class="fa-brands fa-square-instagram"></i>
-				</li>
-				<li>
-				  <i class="fa-brands fa-linkedin"></i>
-				</li>
-			  </ul>
-			  </div>
-			</div>
-			<div class="footerContact">
-			<div>
-			  <h4>Want to contact us?</h4>
-			  <ul>
-				<li class="contactText">
-				  Address: 1654 Ashton Road, Kingston, NC, 28209
-				</li>
-				<li class="contactText">
-				  Email: hitUsUp@gmail.com
-				</li>
-				<li class="contactText">
-				  Phone: +1(980)-667-9843
-				</li>
-			  </ul>
-			</div>
-			<div>
-			  <img src="../logo/exampleLogo.png" alt="Byte Bridge Logo">
-			</div>
-		  </div>
-		  </footer>
-		  <script src="script.js"></script>
-		  <script src="https://kit.fontawesome.com/5e3005e55e.js" crossorigin="anonymous"></script>
-	</body>
+
+            <div class="form-group">
+              <label for="donateAmt">Custom Amount:</label>
+              <input
+                type="number"
+                name="donateAmt"
+                id="donateAmt"
+                placeholder="Custom Amount"
+              />
+              <span class="form-message"></span>
+              <!-- Span for error message -->
+            </div>
+
+            <button class="button" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footerSocials">
+        <h4>Follow our socials!</h4>
+        <ul class="socialIcons">
+          <li><i class="fa-brands fa-square-facebook"></i></li>
+          <li><i class="fa-brands fa-square-instagram"></i></li>
+          <li><i class="fa-brands fa-linkedin"></i></li>
+        </ul>
+      </div>
+
+      <div class="footerContact">
+        <h4>Want to contact us?</h4>
+        <ul>
+          <li class="contactText">
+            Address: 1654 Ashton Road, Kingston, NC, 28209
+          </li>
+          <li class="contactText">Email: hitUsUp@gmail.com</li>
+          <li class="contactText">Phone: +1(980)-667-9843</li>
+        </ul>
+        <div>
+          <img src="../logo/exampleLogo.png" alt="Byte Bridge Logo" />
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="donate.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5e3005e55e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

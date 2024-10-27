@@ -7,6 +7,39 @@
 }
 
 /* FORMATTING */
+
+/* Input field hover and focus effect */
+input {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  border: 1px solid #ccc; /* Initial border color */
+}
+
+input:hover,
+input:focus {
+  border-color: #6FA85F; /* Green border on hover and focus */
+  box-shadow: 0 6px 12px rgba(111, 168, 95, 0.5); /* More visible green shadow */
+  outline: none; /* Remove default focus outline */
+}
+/* Test */
+
+/* Ensure form-group takes full width and adjusts spacing */
+.form-group {
+  width: 100%; /* Make the form-group div take full width */
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group input {
+  width: 100%; /* Ensure input inside form-group also takes full width */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+.form-group .form-message {
+  font-size: 0.9rem;
+  color: red; /* Example color for error messages */
+  margin-top: 0.5rem; /* Add some space above the message */
+}
+
 .donateAll {
   height: 100%;
   width: 100%;
