@@ -321,6 +321,11 @@ textarea {
 	margin: 4px;
 	color: var(--clr-highlight);
 }
+.form-error {
+	font-size: 0.8rem;
+	margin-top: 5px;
+  }
+  
 
 
 /* Footer Media Queries */
