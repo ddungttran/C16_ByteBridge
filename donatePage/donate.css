@@ -144,7 +144,7 @@ footer {
     width: 66%; /* Reduce input width to align with form fields */
     margin-left: 10px;
   }
-
+}
 @media (max-width: 480px) {
   .background {
     width: 100%; /* Full width on mobile screens */
@@ -167,3 +167,4 @@ footer {
     width: 100%;
     justify-content: space-evenly; /* Evenly space out buttons on mobile */
   }
+}
