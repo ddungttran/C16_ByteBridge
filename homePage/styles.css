@@ -61,3 +61,11 @@ img{
 h2{
     text-align: center;
 }
+@media only screen and (max-width: 600px) {
+}
+@media (max-width:796px) {
+  .sectionwrapper {
+      display:flex;
+      flex-direction: column;
+  }
+}
