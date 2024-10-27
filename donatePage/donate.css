@@ -1,4 +1,3 @@
-
 /* Picture Banner */
 .pictureBanner {
   width: 100%;
@@ -8,8 +7,8 @@
 
 /* Form Group Styling */
 .form-group {
-  position: relative; /* Allows positioning of error message below */
-  margin-bottom: 1.5rem; /* Space between form fields */
+  position: relative;
+  margin-bottom: 1.5rem;
 }
 
 /* Input Fields */
@@ -18,42 +17,38 @@ input {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
-  width: 100%; /* Full width */
-  height: 5vh; /* Height for better touch targets */
-  box-sizing: border-box; /* Ensures padding is included in width */
+  width: 100%;
+  height: 5vh;
+  box-sizing: border-box;
 }
 
 input:hover,
 input:focus {
-  border-color: #6FA85F; 
+  border-color: #6FA85F;
   box-shadow: 0 6px 12px rgba(111, 168, 95, 0.5);
-  outline: none; /* Removes default focus outline */
+  outline: none;
 }
 
 /* Error Message Styling */
 .form-group .form-message {
   position: absolute;
-  top: 100%; /* Positions right below the input */
+  top: 100%;
   left: 0;
-  font-size: 0.85rem; /* Smaller font size */
+  font-size: 0.85rem;
   color: red;
-  margin-top: 4px; /* Small gap between input and error */
+  margin-top: 4px;
   line-height: 1;
 }
 
 /* Donate Page Title Styling */
 .donateAll h1 {
   font-size: 3rem;
-  color: var(--clr-nav-background); 
+  color: var(--clr-nav-background);
   margin-bottom: 1.5rem;
   text-align: center;
 }
 
 /* Donate Form Container */
-
-
-/* FORMATTING */
-
 .donateAll {
   height: 100%;
   width: 100%;
@@ -61,13 +56,13 @@ input:focus {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color: rgb(51, 49, 49); 
+  background-color: rgb(51, 49, 49);
 }
 
 .background {
   display: flex;
   flex-direction: column;
-  background-color: #F7E5B1; 
+  background-color: #F7E5B1;
   border-radius: 15px;
   width: 50%;
   padding: 5rem 2rem;
@@ -79,7 +74,7 @@ input:focus {
 .donateAll h1 {
   font-size: 3rem;
   text-align: center;
-  color: #324534; 
+  color: #324534;
   margin-bottom: 1rem;
 }
 
@@ -87,12 +82,12 @@ input:focus {
 .donateButtons {
   display: flex;
   margin-bottom: 1rem;
-  flex-wrap: wrap; /* Wraps buttons on smaller screens */
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .donateButtons .button {
-  background-color: #6FA85F; 
+  background-color: #6FA85F;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -103,7 +98,7 @@ input:focus {
 }
 
 .donateButtons .button:hover {
-  background-color: #324534; 
+  background-color: #324534;
 }
 
 /* Custom Amount Input Field */
@@ -126,7 +121,7 @@ input:focus {
 /* Submit Button Styling */
 .donateForm .submit {
   width: 100%;
-  background-color: var(--clr-text-highlight); 
+  background-color: var(--clr-text-highlight);
   color: #fff;
   padding: 1rem;
   font-size: 1.2rem;
@@ -138,12 +133,12 @@ input:focus {
 }
 
 .donateForm .submit:hover {
-  background-color: var(--clr-footer-background); /* Footer color */
+  background-color: var(--clr-footer-background);
 }
 
 /* Footer Styling */
 footer {
-  background-color: #93473C; 
+  background-color: #93473C;
   padding: 20px;
   text-align: center;
 }
@@ -165,13 +160,13 @@ footer {
 
 .footerLink,
 .footerIcon i {
-  color: #F7E5B1; 
+  color: #F7E5B1;
   font-size: 1.2rem;
 }
 
 .footerLink:hover,
 .footerIcon i:hover {
-  color: #DAB059; 
+  color: #DAB059;
 }
 
 /* Responsive Design */
@@ -210,14 +205,12 @@ footer {
     text-align: left;
   }
 
-}
-
-
   #donateAmt {
     padding: 5px;
-    width: 66%; /* Reduce input width to align with form fields */
+    width: 66%;
     margin-left: 10px;
   }
+}
 
 @media (max-width: 480px) {
   .background {
@@ -234,20 +227,11 @@ footer {
   }
 
   .donateForm input {
-
     width: 100%;
-
-    width: 100%; /* Ensure inputs are full-width */
-
   }
 
   .donateButtons {
     width: 100%;
-
     justify-content: space-evenly;
   }
 }
-
-    justify-content: space-evenly; /* Evenly space out buttons on mobile */
-  }
-
